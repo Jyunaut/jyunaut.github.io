@@ -1,46 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Project Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
+        <h1>Ed Martin Habab</h1>
+        <h2>Game Programmer, Hobbyist 2D Animator</h2>
         <nav>
             <ul>
-                <li><a href="#games">Games</a></li>
-                <li><a href="#animations">Animations</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="info">edmartinh@gmail.com | Vancouver, Canada</li>
+            </ul>
+            <ul>
+                <li><a href="https://jyunaut.itch.io/" class="itchio">itch.io</a></li>
+                <li><a href="https://x.com/Jyunaut" class="twitterx">Twitter / X</a></li>
+                <li><a href="https://www.linkedin.com/in/edmartinh/" class="linkedin">linkedin</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="games">
-            <h2>My Games</h2>
+            <h2>Games</h2>
             <div class="project-list">
                 <div>
-                    <h3>Game Title</h3>
+                    <h3>Alchemic Heist (Pirate Software Game Jam 15)</h3>
                     <img src="assets/game-thumbnail.jpg" alt="Game Thumbnail">
                     <p>A brief description of the game.</p>
                     <a href="https://yourgame.itch.io" target="_blank">Play Now</a>
+                    <button onclick="toggleInfo(this)">More Info</button>
+                    <div class="more-info" style="display: none;">
+                        <p>Additional information about the game.</p>
+                    </div>
                 </div>                
             </div>
         </section>
         <section id="animations">
-            <h2>My Animations</h2>
+            <h2>Animations</h2>
             <div class="project-list">
                 <!-- List your animations here -->
+                <div>
+                    <h3>Animation Title</h3>
+                    <img src="assets/animation-thumbnail.jpg" alt="Animation Thumbnail">
+                    <p>A brief description of the animation.</p>
+                    <button onclick="toggleInfo(this)">More Info</button>
+                    <div class="more-info" style="display: none;">
+                        <p>Additional information about the animation.</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+    <img src="assets/Simi_Idle.gif" alt="Monkey" class="monkey-gif">
     <footer>
-        <p>&copy; 2024 Your Name</p>
+        <p>&copy; 2024 Ed Martin Habab</p>
     </footer>
+    <script src="script.js"></script>
 </body>
-
 </html>
