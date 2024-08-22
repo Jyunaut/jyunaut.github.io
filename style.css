@@ -16,10 +16,12 @@ header {
 
 h1 {
     font-size: 36px;
+    padding: 5px;
 }
 
 h2 {
     font-size: 18px;
+    padding: 5px;
 }
 
 nav ul {
@@ -74,6 +76,7 @@ li.info {
 
 main {
     padding: 20px;
+    flex: 1;
 }
 
 .project-list {
@@ -102,9 +105,9 @@ footer {
 
 .monkey-gif {
     bottom: 10%;
-    right: 10%;
+    right: 100%;
     z-index: -1; /* Ensure it stays in the background */
     width: 100px;
     height: auto;
-    opacity: 0.5;
+    opacity: 1;
 }
