@@ -3,7 +3,17 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #8bdadd;
+    background: #dedede;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    background: #333;
+    color: #fff;
+    min-height: 50px;
 }
 
 header {
@@ -16,6 +26,25 @@ header {
 
 header h1, header h2 {
     margin: 5px 0; /* Adjust the margin as needed */
+}
+
+main {
+    flex: 1;
+    background-color: #dedede;
+}
+
+main h2 {
+    text-align: center;
+    color: #333;
+}
+
+#content-wrap {
+    padding-bottom: 100px;    /* Footer height */
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
 }
 
 nav ul {
@@ -81,20 +110,6 @@ li.info {
     font-size: 14px;
 }
 
-main {
-    padding: 20px;
-    flex: 1;
-    margin: 20px auto;
-    /* max-width: 800px; */
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-    background-color: #dedede;
-}
-
-main h2 {
-    text-align: center;
-    color: #333;
-}
-
 .project-list {
     display: flex;
     flex-wrap: wrap;
@@ -107,16 +122,6 @@ main h2 {
     background: #ffffff5f;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    text-align: center;
-    padding: 10px 20px;
-    background: #333;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
 .monkey-gif {
@@ -230,8 +235,14 @@ footer {
 
 @media (max-width: 768px) {
     .project-list {
-        grid-template-columns: 1fr; /* 1 column for mobile devices */
+        grid-template-columns: 2fr; /* 2 column for mobile devices */
     }
+}
+
+.animation-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Always 2 columns */
+    gap: 16px; /* Optional: Add some gap between the columns */
 }
 
 /* Footer styles */
