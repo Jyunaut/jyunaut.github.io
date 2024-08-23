@@ -14,24 +14,31 @@ header {
     font-size: 32px;
 }
 
+header h1, header h2 {
+    margin: 5px 0; /* Adjust the margin as needed */
+}
+
+nav ul {
+    margin: 5px 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    margin: 0 10px;
+}
+
 h1 {
     font-size: 36px;
     padding: 5px;
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 28px;
     padding: 5px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
 }
 
 nav ul li a {
@@ -77,6 +84,14 @@ li.info {
 main {
     padding: 20px;
     flex: 1;
+    margin: 20px auto;
+    /* max-width: 800px; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+main h2 {
+    text-align: center;
+    color: #333;
 }
 
 .project-list {
@@ -110,4 +125,84 @@ footer {
     width: 100px;
     height: auto;
     opacity: 1;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-list div {
+    background: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.project-list h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.project-list img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-list p {
+    color: #666;
+}
+
+.project-list a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.project-list a:hover {
+    background: #555;
+}
+
+.project-list button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.project-list button:hover {
+    background: #0056b3;
+}
+
+.more-info {
+    margin-top: 10px;
+    padding: 10px;
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+.resize-gif {
+    width: 100%; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
