@@ -2696,7 +2696,8 @@ html[dir=rtl] .follow_button_widget .icon {
 }
 
 .game_grid_widget .game_cell .game_text {
-    white-space: nowrap;
+    white-space: normal;
+    word-wrap: break-word;
     overflow: hidden;
     text-overflow: ellipsis;
     color: var(--itchio_body_color_light)
