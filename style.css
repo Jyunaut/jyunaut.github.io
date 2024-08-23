@@ -196,6 +196,19 @@ footer {
     height: auto; /* Maintain aspect ratio */
 }
 
+/* Responsive layout for smaller screens */
+@media (max-width: 1024px) {
+    .project-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .project-list {
+        grid-template-columns: 1fr; /* 1 column for mobile devices */
+    }
+}
+
 /* Footer styles */
 footer {
     text-align: center;
