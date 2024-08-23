@@ -198,6 +198,29 @@ footer {
     max-width: 100%;
 }
 
+.media-item {
+    width: 100%; /* Set a common width */
+    max-width: 640px; /* Optional: Set a maximum width */
+}
+
+.video-item {
+    aspect-ratio: 16 / 9; /* Maintain 16:9 aspect ratio */
+    width: 100%; /* Set width to 100% of the container */
+    max-width: 640px; /* Optional: Set a maximum width */
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container img, .flex-container iframe {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Responsive layout for smaller screens */
 @media (max-width: 1024px) {
     .project-list {
